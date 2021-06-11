@@ -15,35 +15,4 @@ public class SpringBootDemoApplication {
 
 	}
 
-//	@Bean
-//	@Qualifier("Employee1")
-//	public Employee getEmployee() {
-//		Employee e = new Employee();
-//		e.setName("HuyPN6");
-//		return e;
-//	}
-//	
-//	@Bean
-//	@Qualifier("Employee2")
-//	public Employee getEmployee2() {
-//		Employee e = new Employee();
-//		e.setName("YoungDeveloper");
-//		return e;
-//	}
-//
-//	@Bean
-//	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-//		return args -> {
-//
-//			System.out.println("Let's inspect the beans provided by Spring Boot:");
-//
-//			String[] beanNames = ctx.getBeanDefinitionNames();
-//			Arrays.sort(beanNames);
-//			for (String beanName : beanNames) {
-//				System.out.println(beanName);
-//			}
-//
-//		};
-////	}
-
 }

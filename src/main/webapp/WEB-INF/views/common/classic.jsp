@@ -1,36 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title><tiles:getAsString name="title" /></title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css"></link>
-	<script src="${pageContext.request.contextPath}/js/main.js"></script>
-	
-	<!--  pageContext.request.contextPath = http://localhost:9999/ProductManagermenet/ -->
-	
-</head>
+<html lang="en">
 
-<body>
 
-	<!--Header-->
-	<header>
-	 	<tiles:insertAttribute name="header" />
-	</header>
-	
-	
-	<div class="main">
-		  <tiles:insertAttribute name="menu" />
-		  <div class="content">
-		    <tiles:insertAttribute name="body" />
-		  </div>
-	</div>
-	<tiles:insertAttribute name="footer" />
-		
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="${pageContext.request.contextPath}/resource/css/styles.css" rel="stylesheet" />
+    </head>
+    
+    
+    <body>
+    
+        <!-- Menu -->
+        <tiles:insertAttribute name="menu" />
+        <!-- Header-->
+        <tiles:insertAttribute name="header" />
+        <!-- content -->
+        <tiles:insertAttribute name="body" />
+        <!-- Footer-->
+        <tiles:insertAttribute name="footer" />
+        
+    </body>
+    
+    
 </html>
